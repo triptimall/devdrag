@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://www.phptutorial.net/app/css/style.css">
+ <script>
+function loginForm() { 
+let email = document.forms["login"]["email"].value;
+let password = document.forms["login"]["password"].value;
+  if (email== "") {
+    alert("Email must be filled out");
+     return false;
+  }
+  if (password== "") {
+    alert("Password must be filled out");
+     return false;
+  }
+  
+} 
+  </script> 
+    <title>Login</title>
+</head>
+<body>
+<main>
+    <form name="login" id="login1" action="login" method="post" onsubmit="loginForm()">
+   
+    
+        <h1 class="text-white text-center">Login</h1><br>
+
+      
+ 
+ <label> Email: </label>
+ <input type="email" name="email"  id="" class="form-control"> <br>
+ 
+ <label> Password: </label>
+ <input type="password" name="password"  id="" class="form-control"> <br>
+ 
+        <button class="btn btn-success" type="submit" name="done"value="Submit" >Login  </button><br>
+         <!-- <footer>Already a member? <a href="{{url('/login')}}">Login here</a></footer> -->
+         <!-- <p class="link"><a href="{{url('/register')}}">New Registration</a></p> -->
+         <p class="link"><a href="register.html">New Registration</a></p>
+    </form>
+</main>
+</body>
+</html>   
+<script>
+ 
+
+
+
+
+

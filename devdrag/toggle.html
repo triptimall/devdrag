@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Full-Screen Sidebar with Two Columns</title>
+    <style>
+        /* Styling for the sidebar */
+        .sidebar {
+            height: 100%;
+            width: 0;
+            position: fixed;
+            top: 0;
+            right: 0;
+            background-color: #111;
+            overflow-x: hidden;
+            transition: 0.5s;
+            display: flex;
+        }
+
+        /* Styling for the sidebar content */
+        .sidebar-content {
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+        }
+
+        /* Styling for the toggle button */
+        #toggleBtn {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            cursor: pointer;
+            z-index: 1;
+        }
+
+        /* Styling for the full-screen width */
+        #sidebar.open {
+            width: 100%;
+        }
+
+        /* Styling for the left column (White) */
+        .left-column {
+            flex: 1;
+            height: 100%;
+            background-color: white;
+            position: relative;
+        }
+
+        .left-column-content {
+            padding: 10px;
+        }
+
+        /* Styling for the close button in the left column */
+        .close-button {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            cursor: pointer;
+        }
+
+        /* Styling for the right column (Black) */
+        .black-bg {
+            flex: 1;
+            height: 100%;
+            background-color: black;
+        }
+    </style>
+</head>
+<body>
+    <!-- Toggle button -->
+    <span id="toggleBtn" onclick="toggleSidebar()">&#9776; Open Sidebar</span>
+
+    <!-- Sidebar -->
+    <div id="sidebar" class="sidebar">
+        <div class="sidebar-content">
+            <!-- Left Column (White) -->
+            <div class="left-column">
+                <div class="close-button" onclick="closeSidebar()">✕</div>
+                <div class="left-column-content">
+                    <h2>Left Column</h2>
+                    <p>This is the white column.</p>
+                </div>
+            </div>
+
+            <!-- Right Column (Black) -->
+            <div class="black-bg">
+                <h2>Right Column</h2>
+                <p>This is the black column.</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Function to open the sidebar
+        function toggleSidebar() {
+            var sidebar = document.getElementById("sidebar");
+            sidebar.classList.toggle("open");
+            
+            if (sidebar.classList.contains("open")) {
+                document.getElementById("toggleBtn").textContent = "&#10005; Close Sidebar";
+            } else {
+                document.getElementById("toggleBtn").textContent = "&#9776; Open Sidebar";
+            }
+        }
+
+        // Function to close the sidebar
+        function closeSidebar() {
+            var sidebar = document.getElementById("sidebar");
+            sidebar.classList.remove("open");
+            document.getElementById("toggleBtn").textContent = "&#9776; Open Sidebar";
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title></title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="">
+
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,300;0,400;0,600;1,300&display=swap"
+    rel="stylesheet">
+
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+
+  <link href="css/bootstrap-icons.css" rel="stylesheet">
+
+  <link href="css/magnific-popup.css" rel="stylesheet">
+
+  <link href="css/tooplate-tween-agency.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css">
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    body {
+      font-family: "Lato", sans-serif;
+    }
+
+    .sidenav {
+      height: 100%;
+      width: 0;
+      position: fixed;
+      z-index: 1;
+      top: 0;
+      left: 0;
+      background-color: #0D98BA;
+      overflow-x: hidden;
+      transition: 0.5s;
+      padding-top: 60px;
+    }
+
+    .sidenav a {
+      padding: 8px 8px 8px 32px;
+      text-decoration: none;
+      font-size: 25px;
+      color: #e4e2e2;
+      display: block;
+      transition: 0.3s;
+    }
+
+    .sidenav a:hover {
+      color: #121111;
+    }
+
+    .sidenav .closebtn {
+      position: absolute;
+      top: 0;
+      right: 25px;
+      font-size: 36px;
+      margin-left: 50px;
+    }
+
+    @media screen and (max-height: 450px) {
+      .sidenav {
+        padding-top: 15px;
+      }
+
+      .sidenav a {
+        font-size: 18px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <h1><b>our Process Page</b></h1>
+  <div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a class="nav-link" id="Home3" href="Home.html">Home</a>
+    <a class="nav-link" id="aboutBtn3" href="about.html">About</a>
+    <a class="nav-link" href="#">Our Process</a>
+    <a class="nav-link" id="Services3" href="Services.html">Services</a>
+    <a class="nav-link" id="OurWork3" href="OurWork.html">Our Work</a>
+    <a class="nav-link" id="Pricing3" href="Pricing.html">Pricing</a>
+    <a class="nav-link" id="Contact3" href="Contact.html">Contact</a>
+  </div>
+
+  <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+
+  <script>
+    function openNav() {
+      document.getElementById("mySidenav").style.width = "250px";
+    }
+
+    function closeNav() {
+      document.getElementById("mySidenav").style.width = "0";
+    }
+  </script>
+
+<script>
+  const nextPageButton = document.getElementById('Home3');
+
+  // Add a click event listener
+  nextPageButton.addEventListener('click', function () {
+    // Navigate to the next page by setting the new URL
+    window.location.href = 'Home.html'; // Replace with the URL of your next page
+  });
+</script>
+
+<script>
+  const nextPageButton1 = document.getElementById('aboutBtn3');
+
+  // Add a click event listener
+  nextPageButton1.addEventListener('click', function () {
+    // Navigate to the next page by setting the new URL
+    window.location.href = 'about.html'; // Replace with the URL of your next page
+  });
+</script>
+
+<script>
+const nextPageButton2 = document.getElementById('Services3');
+
+// Add a click event listener
+nextPageButton2.addEventListener('click', function () {
+  // Navigate to the next page by setting the new URL
+  window.location.href = 'Services.html'; // Replace with the URL of your next page
+});
+</script>
+
+<script>
+const nextPageButton3 = document.getElementById('OurWork3');
+
+// Add a click event listener
+nextPageButton3.addEventListener('click', function () {
+  // Navigate to the next page by setting the new URL
+  window.location.href = 'OurWork.html'; // Replace with the URL of your next page
+});
+</script>
+
+<script>
+const nextPageButton4 = document.getElementById('Pricing3');
+
+// Add a click event listener
+nextPageButton4.addEventListener('click', function () {
+  // Navigate to the next page by setting the new URL
+  window.location.href = 'Pricing.html'; // Replace with the URL of your next page
+});
+</script>
+
+<script>
+const nextPageButton5 = document.getElementById('Contact3');
+
+// Add a click event listener
+nextPageButton5.addEventListener('click', function () {
+  // Navigate to the next page by setting the new URL
+  window.location.href = 'Contact.html'; // Replace with the URL of your next page
+});
+</script>
+</body>
+
+
+</html>

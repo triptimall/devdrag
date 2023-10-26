@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://www.phptutorial.net/app/css/style.css">
+    <script>
+function registerForm() { 
+let username = document.forms["register"]["username"].value;
+let email = document.forms["register"]["email"].value;
+let password = document.forms["register"]["password"].value;
+let passwordagain = document.forms["register"]["passwordagain"].value;
+  if (username== "") {
+    alert("Name must be filled out");
+     return false;
+  }
+  if (email== "") {
+    alert("Email must be filled out");
+     return false;
+  }
+  if (password== "") {
+    alert("Password must be filled out");
+     return false;
+  }
+  if (passwordagain== "") {
+    alert(" Passwordagain must be filled out");
+    return false;
+  }
+  if(passwordagain!=password){
+    alert(" Password not same ");
+     return false;
+  }
+} 
+ </script> 
+ 
+    <title>Register</title>
+</head>
+<body>
+<main>
+    <form name="register" id="register1" action="register" method="post" onsubmit="registerForm()">
+
+
+        <h1 class="text-white text-center">Sign Up</h1><br>
+
+        
+ <label> Username: </label>
+ <input type="text" name="username" id="username" class="form-control"  > <br>
+ 
+ <label> Email: </label>
+ <input type="email" name="email"  id="email" class="form-control"> <br>
+ 
+ <label> Password: </label>
+ <input type="password" name="password"  id="password" class="form-control"> <br>
+ 
+ 
+            <label for="password2">Password Again:</label> 
+             <input type="password" name="passwordagain"  id="passwordagain" class="form-control"> <br> 
+             
+         
+        <div>
+            <label for="agree">
+                <input type="checkbox" name="agree" id="agree" value="yes"/> I agree
+                with the
+                <a href="#" title="term of services">term of services</a>
+            </label>
+           
+        </div>
+        <button class="btn btn-success" type="submit" name="done"value="Submit" >Register  </button><br>
+        <footer>Already a member? <a href="login.html">Login here</a></footer>
+    </form>
+</main>
+</body>
+</html>
+
+<!-- <script>
+        $(document).ready(function() {
+           // openLoginModal();
+            $('registerForm').submit(function(e) {
+                e.preventDefault();
+                var token = $('input[name="_token"').val();
+                var name = $('username').val();
+                var email = $('email').val();
+                var password = $('password').val();
+                var passwordagain = $('passwordagain').val();
+                $.ajax({
+                    url: '{{("register")}}',
+                    type: 'post',
+                    data: {
+                        '_token': token,
+                        'username': name,
+                        'email': email,
+                        'password': password,
+                        'passwordagain': passwordagain
+                    },
+                    success: function(res) {
+                        if (res.error) {
+                            $('notmatch').text(res.error)
+                        }
+                        if (res.success) {
+                            $('registered').text(res.success);
+                            //openLoginModal();
+                        }
+                    }
+                })
+            })
+          });
+            </script> -->
+<!-- </body>
+</html> -->
+
+
+
+
+
+
+
+

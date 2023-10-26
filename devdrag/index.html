@@ -1,0 +1,1090 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>software company</title>
+
+    <!-- CSS FILES -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,300;0,400;0,600;1,300&display=swap"
+        rel="stylesheet">
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <link href="css/bootstrap-icons.css" rel="stylesheet">
+
+    <link href="css/magnific-popup.css" rel="stylesheet">
+
+    <link href="css/tooplate-tween-agency.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css">
+
+    <!--
+
+Tooplate 2128 Tween Agency
+
+https://www.tooplate.com/view/2128-tween-agency
+
+-->
+
+</head>
+
+<body>
+
+    <nav class="navbar fixed-top navbar-expand-lg">
+        <div class="container">
+
+            <a href="index.html" class="navbar-brand">
+                <i class="bi-layers"></i> DevDrag
+            </a>
+
+            <a href="#" class="custom-btn btn btn-lg d-lg-none ms-auto me-4">
+
+                <i class="bi-download ms-2"></i>
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <script>
+                // Function to open the sidebar
+                function toggleSidebar() {
+                    var sidebar = document.getElementById("sidebar");
+                    sidebar.classList.toggle("open");
+
+                    if (sidebar.classList.contains("open")) {
+                        document.getElementById("toggleBtn").innerHTML = '<i class="fas fa-times"></i>';
+                    } else {
+                        document.getElementById("toggleBtn").innerHTML = '<i class="fas fa-bars"></i>';
+                    }
+                }
+
+                // Function to close the sidebar
+                function closeSidebar() {
+                    var sidebar = document.getElementById("sidebar");
+                    sidebar.classList.remove("open");
+                    document.getElementById("toggleBtn").innerHTML = '<i class="fas fa-bars"></i>';
+                }
+            </script>
+            <!-- <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-lg-5"> 
+                    <i class="bi bi-house"></i>  -->
+
+                    
+                        <!-- <a class="nav-link" id="login1" href="./images/work/html/login.html">Login</a>
+                        <a class="nav-link" id="register1" href="./images/work/html/register.html">Register</a> -->
+                        <script>
+                            const nextPageButton = document.getElementById('login1');
+                            
+                            // Add a click event listener
+                            nextPageButton.addEventListener('click', function () {
+                              // Navigate to the next page by setting the new URL
+                              window.location.href = './images/work/html/login.html'; // Replace with the URL of your next page
+                            });
+                            </script>
+
+
+<script>
+    const nextPageButton1 = document.getElementById('register1');
+    
+    // Add a click event listener
+    nextPageButton1.addEventListener('click', function () {
+      // Navigate to the next page by setting the new URL
+      window.location.href = './images/work/html/register.html'; // Replace with the URL of your next page
+    });
+    </script>
+                   
+                     <!-- <li class="nav-item">
+                        <a class="nav-link" href="#section_1">Home</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#section_2">About</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#section_3">Our Process</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#section_4">Services</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#section_5">Our Work</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#section_6">Pricing</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#section_7">Contact</a>
+                    </li>
+
+                </ul> 
+                 -->
+
+                <div class="ms-auto d-none d-lg-block">
+                    <button id="toggleBtn" onclick="toggleSidebar()"><i class="fas fa-bars"></i></button>
+                    <!-- Sidebar -->
+                    <div id="sidebar" class="sidebar">
+                        <div class="sidebar-content">
+                            <!-- Left Column (White) -->
+                            <div class="left-column">
+                                <div class="left-column-content">
+                                    <h2>Left Column</h2>
+                                    <p>This is the white column.</p>
+                                    <Section><div><h2>Home</h2></div><br></Section>
+                                    <Section><div><h2>About</h2></div><br></Section>
+                                    
+                                    <div><h2>Resource</h2></div><br>
+                                    <div><h2>Contect</h2></div><br>
+                                    <div><h2>Service</h2></div>
+
+                                </div>
+                            </div>
+
+                            <!-- Right Column (Black) -->
+                            <div class="black-bg">
+                                <!-- <h2>Right Column</h2>
+                                <p>This is the black column.</p> -->
+                               <label> <ul class="navbar-nav ms-lg-5">
+                                <!-- <svg xmlns="http://www.w3.org/2000/svg" width="45" height="40" fill="currentColor" class="bi bi-houses-fill" viewBox="0 0 16 16" >
+                                    <path d="M7.207 1a1 1 0 0 0-1.414 0L.146 6.646a.5.5 0 0 0 .708.708L1 7.207V12.5A1.5 1.5 0 0 0 2.5 14h.55a2.51 2.51 0 0 1-.05-.5V9.415a1.5 1.5 0 0 1-.56-2.475l5.353-5.354L7.207 1Z"/>
+                                    <path d="M8.793 2a1 1 0 0 1 1.414 0L12 3.793V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v3.293l1.854 1.853a.5.5 0 0 1-.708.708L15 8.207V13.5a1.5 1.5 0 0 1-1.5 1.5h-8A1.5 1.5 0 0 1 4 13.5V8.207l-.146.147a.5.5 0 1 1-.708-.708L8.793 2Z"/>
+                                  </svg> -->
+                                <label> <li class="nav-item">
+                                        <!-- <a class="nav-link" id="homeBtn" href="./images/work/html/home.html">Home</a> -->
+                                    </li>
+                                <label>
+                                    <li class="nav-item">
+                                        <a class="nav-link" id="aboutBtn" href="./images/work/html/about.html">About Us</a>
+                                    </li>
+                
+                                    <li class="nav-item">
+                                        <!-- <a class="nav-link" id="OurProcessBtn" href="./images/work/html/OurProcess.html">Our Process</a> -->
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" id="ServicesBtn" href="./images/work/html/OurServices.html">Our Services</a>
+                                    </li>
+                
+                                    <li class="nav-item">
+                                        <a class="nav-link" id="PortfolioBtn" href="./images/work/html/Portfolio.html">Portfolio</a>
+                                    </li>
+                
+                                    <li class="nav-item">
+                                        <!-- <a class="nav-link" id="PricingBtn" href="./images/work/html/Pricing.html">Pricing</a> -->
+                                    </li>
+                
+                                    <li class="nav-item">
+                                        <a class="nav-link" id="ContactBtn" href="./images/work/html/Contact.html">Contact Us</a>
+                                    </li>
+                
+                                </ul></label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            <!-- </div> -->
+        </div>
+    </nav>
+
+    <main>
+
+        <section class="hero d-flex justify-content-center align-items-center" id="section_1">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-lg-8 col-12">
+                        <div class="heroText">
+                            <h3 class="text-white mb-lg-5 mb-4">Empowering Your Digital Success Together<br><br>A
+                                Creative Design Agency Where Creativity Meets Strategy, and Innovation Meets Elegance
+                            </h3>
+
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="overlay"></div>
+        </section>
+
+
+
+        <section class="about section-padding" id="section_2" style="background-color:#E8e4c9;">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-lg-6 col-12">
+                        <h2 class="mb-5"></h2>
+                    </div>
+
+                    <!-- <div class="col-lg-4 col-12 ms-lg-auto mb-5 mb-lg-0">
+                            <nav>
+                                <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                                    <button class="nav-link active" id="nav-intro-tab" data-bs-toggle="tab" data-bs-target="#nav-intro" type="button" role="tab" aria-controls="nav-intro" aria-selected="true">Introduction</button>
+
+                                    <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Profile</button>
+
+                                    <button class="nav-link" id="nav-faq-tab" data-bs-toggle="tab" data-bs-target="#nav-faq" type="button" role="tab" aria-controls="nav-faq" aria-selected="false">FAQs</button>
+                                </div>
+                            </nav>
+                        </div> -->
+
+                    <div class="col-12">
+                        <div class="tab-content" id="nav-tabContent">
+                            <div class="tab-pane fade show active" id="nav-intro" role="tabpanel"
+                                aria-labelledby="nav-intro-tab">
+                                <div class="row">
+                                    <div class="col-lg-6 col-12 mb-lg-0 mb-4">
+                                        <!-- <img src="images/webpage-browser-digital-icon-symbols-concept.jpg"
+                                            class="img-fluid" alt=""> -->
+                                        <!-- Text strip with blinking effect -->
+                                        <div class="text-strip">
+
+                                            <div><span class="blinking-text">Blinking Text 1</span></div><br><br>
+
+                                            <span class="text-spacing"></span>
+                                             
+                                            <div><span class="blinking-text">Blinking Text 2</span></div>
+                                            <!-- <div class="waitingForConnection">chandan </div>
+                                            <div class="waitingForConnection2">deepak</div>
+                                            <div class="waitingForConnection3">ritik</div> -->
+
+
+                                           
+                                        </div>
+                                        <!-- Text strip with blinking effect -->
+
+                                        <h1 class="ms-header__title">
+                                            This is
+                                            <div class="ms-slider">
+                                              <ul class="ms-slider__words">
+                                                <li class="ms-slider__word">simple</li>
+                                                <li class="ms-slider__word">easy</li>
+                                                <li class="ms-slider__word">powerful</li>
+                                                <!-- This last word needs to duplicate the first one to ensure a smooth infinite animation -->
+                                                <li class="ms-slider__word">simple</li>
+                                              </ul>
+                                            </div>
+                                          </h1>
+
+                                    </div>
+
+                                    <div class="col-lg-5 col-12 m-auto">
+                                        <h3 class="mb-3">WHO WE ARE</h3>
+
+                                        <p>At DevDrag, we're not just another digital marketing and web design agency.
+                                            We're a team of passionate experts who thrive on the art of creating
+                                            visually stunning, user-friendly, and highly effective digital solutions</p>
+
+                                        <p>Our mission is clear: to collaborate closely with industry leaders, like you,
+                                            to provide tailored digital services and build powerful marketing tools that
+                                            elevate your brand to new heights.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="tab-pane fade" id="nav-profile" role="tabpanel"
+                                aria-labelledby="nav-profile-tab">
+                                <div class="row">
+                                    <div class="col-lg-5 col-12 m-auto">
+                                        <h3 class="mb-3">Marie Smarty, CEO</h3>
+
+                                        <p>Our priority is your happiness working together with us. We guarantee you the
+                                            best service quality from us. Feel free to talk to us via email, twitter, or
+                                            linkedin.</p>
+
+                                        <ul class="social-icon mt-lg-5 mt-3">
+                                            <li class="me-3"><strong>Where to find?</strong></li>
+
+                                            <li><a href="https://twitter.com/search?q=tooplate"
+                                                    class="social-icon-link bi-twitter"></a></li>
+
+                                            <li><a href="#" class="social-icon-link bi-linkedin"></a></li>
+
+                                            <li><a href="#" class="social-icon-link bi-envelope"></a></li>
+                                        </ul>
+                                    </div>
+
+                                    <div class="col-lg-6 col-12 mt-lg-0 mt-4">
+                                        <img src="images/dream-about-working-corporation-became-true.jpg"
+                                            class="img-fluid" alt="">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="tab-pane fade" id="nav-faq" role="tabpanel" aria-labelledby="nav-faq-tab">
+                                <div class="row">
+                                    <div class="col-lg-6 col-12 mb-lg-0 mb-4">
+                                        <img src="images/php-programming-html-coding-cyberspace-concept.jpg"
+                                            class="img-fluid" alt="">
+                                    </div>
+
+                                    <div class="col-lg-5 col-12 m-auto">
+                                        <h3 class="mb-3">Frequenlty Asked Questions</h3>
+
+                                        <div class="accordion" id="accordionGeneral">
+                                            <div class="accordion-item">
+                                                <h2 class="accordion-header" id="headingOne">
+                                                    <button class="accordion-button collapsed" type="button"
+                                                        data-bs-toggle="collapse" data-bs-target="#accordionGeneralOne"
+                                                        aria-expanded="true" aria-controls="accordionGeneralOne">
+                                                        What is Tween Agency?
+                                                    </button>
+                                                </h2>
+
+                                                <div id="accordionGeneralOne" class="accordion-collapse collapse"
+                                                    aria-labelledby="headingOne" data-bs-parent="#accordionGeneral">
+
+                                                    <div class="accordion-body">
+                                                        <p class="large-paragraph"><strong>Tween Agency</strong> is free
+                                                            HTML template powered by Bootstrap 5 CSS framework. This
+                                                            means you can use all standard CSS classes provided by
+                                                            Bootstrap version 5 to customize your CSS layout.</p>
+
+                                                        <p class="large-paragraph">You are allowed to use it for your
+                                                            clients. You are not allowed to redistribute this template
+                                                            ZIP file on any other template website. Please <a
+                                                                href="https://www.tooplate.com/contact"
+                                                                target="_blank"><strong>contact Tooplate</strong></a>
+                                                            for more info.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="accordion-item">
+                                                <h2 class="accordion-header" id="headingTwo">
+                                                    <button class="accordion-button collapsed" type="button"
+                                                        data-bs-toggle="collapse" data-bs-target="#accordionGeneralTwo"
+                                                        aria-expanded="false" aria-controls="accordionGeneralTwo">
+                                                        What are available services?
+                                                    </button>
+                                                </h2>
+
+                                                <div id="accordionGeneralTwo" class="accordion-collapse collapse"
+                                                    aria-labelledby="headingTwo" data-bs-parent="#accordionGeneral">
+
+                                                    <div class="accordion-body">
+                                                        <p class="large-paragraph">We provide full digital marketing
+                                                            services for all various aspects of your company's web
+                                                            presence and social medias. You have 100% peace of mind for
+                                                            your company by working with us.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="accordion-item">
+                                                <h2 class="accordion-header" id="headingThree">
+                                                    <button class="accordion-button collapsed" type="button"
+                                                        data-bs-toggle="collapse"
+                                                        data-bs-target="#accordionGeneralThree" aria-expanded="false"
+                                                        aria-controls="accordionGeneralThree">
+                                                        How many successful projects?
+                                                    </button>
+                                                </h2>
+
+                                                <div id="accordionGeneralThree" class="accordion-collapse collapse"
+                                                    aria-labelledby="headingThree" data-bs-parent="#accordionGeneral">
+
+                                                    <div class="accordion-body">
+                                                        <p class="large-paragraph">We have over 280+ successful projects
+                                                            for different companies. There are great experiences of
+                                                            working together with different clients all over the world.
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="our process section-padding" id="section_3" style="background-color:#E8e4c9;">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="tab-content" id="nav-tabContent">
+                            <div class="tab-pane fade show active" id="nav-intro" role="tabpanel"
+                                aria-labelledby="nav-intro-tab">
+                                <div class="row">
+                                    <div class="col-lg-15 col-25 m-auto">
+                                        <h1 class="mb-5">Our Process</h1>
+                                        <div class="button-container">
+
+                                            <button class="add-button" onclick="showContent('content1')">1</button>
+                                            <button class="add-button" onclick="showContent('content2')">2</button>
+                                            <button class="add-button" onclick="showContent('content3')">3</button>
+                                            <button class="add-button" onclick="showContent('content4')">4</button>
+                                            <button class="add-button" onclick="showContent('content5')">5</button>
+                                            <button class="add-button" onclick="showContent('content6')">6</button>
+                                            <button class="add-button" onclick="showContent('content7')">7</button>
+                                        </div>
+                                        <div id="content1" class="content">
+
+                                            <h3> Spark of Inspiration:</h3><br>
+                                            Our creative odyssey begins with a spark – a moment of inspiration.
+                                            We gather around the virtual creative table, and with your unique goals and
+                                            vision as our guiding light, we embark on a journey like no other.
+
+                                        </div>
+                                        <div id="content2" class="content">
+                                            <h3>Unveiling the Blueprint:</h3><br>
+                                            Next, we unveil the blueprint of your dreams.
+                                            Share your project's soul with us, the colors that define your brand, the
+                                            functionalities that fuel your ambitions, and the purpose that breathes life
+                                            into every pixel.
+                                            It's as simple as filling in the blanks, and we're here to fast-track your
+                                            vision.
+                                        </div>
+                                        <div id="content3" class="content">
+                                            <h3>3.Diving into the Details: </h3><br>
+                                            Once your creative compass is set, we take the plunge into the depths of
+                                            your project.
+                                            We're not just designers; we're explorers, diving deep to fathom the
+                                            intricacies of your organization, products, and services.
+                                            We align these intricacies with your target audience and objectives,
+                                            building the bedrock upon which your unique design and functionality will
+                                            thrive.
+                                            Our Project Management App keeps us on track, ensuring a seamless
+                                            collaborative journey.
+                                        </div>
+                                        <div id="content4" class="content">
+                                            <h3>Design Alchemy:</h3><br>
+                                            Here's where the magic truly happens. We conjure designs that captivate and
+                                            data that illuminates.
+                                            We dig into the minds of your audience, pinpointing their desires to create
+                                            a symphony of engagement.
+                                            Collaborating closely with you, we mold these insights into prototypes that
+                                            vividly showcase our vision.
+                                            Like masterpieces, these mockups evolve, each brushstroke refining them to
+                                            meet our shared objectives.
+                                        </div>
+                                        <div id="content5" class="content">
+                                            <h3>Coding as Craft:</h3><br>
+                                            With the canvas set, we craft the code that brings your vision to life.
+                                            It's not just about functionality; it's about artistry.
+                                            Our rock-solid back-end foundation meets a bespoke front-end, ensuring that
+                                            updating your website becomes an experience to savor, not a chore.
+                                            Your digital masterpiece deserves nothing less.
+                                        </div>
+                                        <div id="content6" class="content">
+                                            <h3>Voyage of Quality Assurance:</h3><br>
+                                            Every pixel, every line of code, undergoes a meticulous journey through our
+                                            Quality Assurance team.
+                                            We test rigorously, ensuring that your creation shines flawlessly on every
+                                            platform. The result? The most seamless user experience that guarantees the
+                                            delight of all who visit.
+                                            Once we give it the nod, you review our masterpiece, making any final
+                                            brushstrokes if needed.
+                                        </div>
+                                        <div id="content7" class="content">
+                                            <h3>Delivery with a Promise:</h3><br>
+                                            At the culmination of our creative journey, we deliver your dream project.
+                                            Files are handed over, and our expert hands install them on your server.
+                                            Your satisfaction is our guiding star, and we spare no effort to meet your
+                                            highest expectations.
+                                            We extend our commitment to quality with ongoing monthly maintenance,
+                                            cementing the foundation for a lasting partnership built on trust.
+                                            Join us at the creative table, where innovation, artistry, and inspiration
+                                            converge to bring your vision to life, one extraordinary step at a time.
+                                        </div>
+
+                                        <script>
+                                            function showContent(contentId) {
+                                                // Hide all content areas
+                                                var contentAreas = document.querySelectorAll('.content');
+                                                for (var i = 0; i < contentAreas.length; i++) {
+                                                    contentAreas[i].style.display = 'none';
+                                                }
+
+                                                // Show the selected content area
+                                                var selectedContent = document.getElementById(contentId);
+                                                if (selectedContent) {
+                                                    selectedContent.style.display = 'block';
+                                                }
+                                            }
+                                        </script>
+
+
+
+
+
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="tab-pane fade" id="nav-profile" role="tabpanel"
+                                aria-labelledby="nav-profile-tab">
+                                <div class="row">
+                                    <div class="col-lg-5 col-12 m-auto">
+                                        <h3 class="mb-3">Marie Smarty, CEO</h3>
+
+                                        <p>Our priority is your happiness working together with us. We guarantee you the
+                                            best service quality from us. Feel free to talk to us via email, twitter, or
+                                            linkedin.</p>
+
+                                        <ul class="social-icon mt-lg-5 mt-3">
+                                            <li class="me-3"><strong>Where to find?</strong></li>
+
+                                            <li><a href="https://twitter.com/search?q=tooplate"
+                                                    class="social-icon-link bi-twitter"></a></li>
+
+                                            <li><a href="#" class="social-icon-link bi-linkedin"></a></li>
+
+                                            <li><a href="#" class="social-icon-link bi-envelope"></a></li>
+                                        </ul>
+                                    </div>
+
+                                    <div class="col-lg-6 col-12 mt-lg-0 mt-4">
+                                        <img src="images/dream-about-working-corporation-became-true.jpg"
+                                            class="img-fluid" alt="">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="tab-pane fade" id="nav-faq" role="tabpanel" aria-labelledby="nav-faq-tab">
+                                <div class="row">
+                                    <div class="col-lg-6 col-12 mb-lg-0 mb-4">
+                                        <img src="images/php-programming-html-coding-cyberspace-concept.jpg"
+                                            class="img-fluid" alt="">
+                                    </div>
+
+                                    <div class="col-lg-5 col-12 m-auto">
+                                        <h3 class="mb-3">Frequenlty Asked Questions</h3>
+
+                                        <div class="accordion" id="accordionGeneral">
+                                            <div class="accordion-item">
+                                                <h2 class="accordion-header" id="headingOne">
+                                                    <button class="accordion-button collapsed" type="button"
+                                                        data-bs-toggle="collapse" data-bs-target="#accordionGeneralOne"
+                                                        aria-expanded="true" aria-controls="accordionGeneralOne">
+                                                        What is Tween Agency?
+                                                    </button>
+                                                </h2>
+
+                                                <div id="accordionGeneralOne" class="accordion-collapse collapse"
+                                                    aria-labelledby="headingOne" data-bs-parent="#accordionGeneral">
+
+                                                    <div class="accordion-body">
+                                                        <p class="large-paragraph"><strong>Tween Agency</strong> is free
+                                                            HTML template powered by Bootstrap 5 CSS framework. This
+                                                            means you can use all standard CSS classes provided by
+                                                            Bootstrap version 5 to customize your CSS layout.</p>
+
+                                                        <p class="large-paragraph">You are allowed to use it for your
+                                                            clients. You are not allowed to redistribute this template
+                                                            ZIP file on any other template website. Please <a
+                                                                href="https://www.tooplate.com/contact"
+                                                                target="_blank"><strong>contact Tooplate</strong></a>
+                                                            for more info.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="accordion-item">
+                                                <h2 class="accordion-header" id="headingTwo">
+                                                    <button class="accordion-button collapsed" type="button"
+                                                        data-bs-toggle="collapse" data-bs-target="#accordionGeneralTwo"
+                                                        aria-expanded="false" aria-controls="accordionGeneralTwo">
+                                                        What are available services?
+                                                    </button>
+                                                </h2>
+
+                                                <div id="accordionGeneralTwo" class="accordion-collapse collapse"
+                                                    aria-labelledby="headingTwo" data-bs-parent="#accordionGeneral">
+
+                                                    <div class="accordion-body">
+                                                        <p class="large-paragraph">We provide full digital marketing
+                                                            services for all various aspects of your company's web
+                                                            presence and social medias. You have 100% peace of mind for
+                                                            your company by working with us.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="accordion-item">
+                                                <h2 class="accordion-header" id="headingThree">
+                                                    <button class="accordion-button collapsed" type="button"
+                                                        data-bs-toggle="collapse"
+                                                        data-bs-target="#accordionGeneralThree" aria-expanded="false"
+                                                        aria-controls="accordionGeneralThree">
+                                                        How many successful?
+                                                    </button>
+                                                </h2>
+
+                                                <div id="accordionGeneralThree" class="accordion-collapse collapse"
+                                                    aria-labelledby="headingThree" data-bs-parent="#accordionGeneral">
+
+                                                    <div class="accordion-body">
+                                                        <p class="large-paragraph">Deepaknvnvnldkvnvn cv cvjfs
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <section class="services section-padding" id="section_4" style="background-color:#E8e4c9;">
+            <div class="container">
+                <div class="row">
+
+                    <h2 class="mb-5 text-center">Digital Services</h2>
+
+                    <div class="col-lg-4 col-12 d-flex bg-primary p-0">
+                        <img src="images/services/undraw_Online_page_re_lhgx.svg" class="img-fluid services-image"
+                            alt="">
+                    </div>
+
+                    <div class="col-lg-4 col-12 p-0">
+                        <div class="services-info custom-icon-left paddingText">
+
+                            <h4 class="">UI Design</h4>
+
+                            <p class="mb-4">Lorem Ipsum is simply dummy text of the printing industry</p>
+
+                            <a class="custom-btn custom-bg-dark btn" href="#">Learn More</a>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-12 d-flex bg-warning p-0">
+                        <img src="images/services/undraw_online_transactions_02ka.svg" class="img-fluid services-image"
+                            alt="">
+                    </div>
+
+                    <div class="col-lg-4 col-12 p-0 order-lg-0 order-sm-5">
+
+                        <div class="services-info custom-icon-right paddingText order-lg-0 order-sm-2">
+
+                            <h4 class="">Marketing</h4>
+
+                            <p class="mb-4">Lorem Ipsum is simply dummy text of the printing industry</p>
+
+                            <a class="custom-btn custom-bg-dark btn" href="#">Learn More</a>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-12 d-flex bg-success p-0 order-lg-0 order-sm-4">
+                        <img src="images/services/undraw_content_team_3epn.svg" class="img-fluid services-image" alt="">
+                    </div>
+
+                    <div class="col-lg-4 col-12 p-0">
+
+                        <div class="services-info custom-icon-top paddingText">
+
+                            <h4 class="">Ecommerce</h4>
+
+                            <p class="mb-4">Lorem Ipsum is simply dummy text of the printing industry</p>
+
+                            <a class="custom-btn custom-bg-dark btn" href="#">Learn More</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="work section-padding" id="section_5" style="background-color:#E8e4c9;">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <h2 class="mb-5 text-center">Selected Projects</h2>
+                    </div>
+
+                    <div class="col-lg-4 col-12">
+                        <div class="work-thumb mb-4">
+                            <div class="work-image-wrap">
+                                <a href="images/work/anthony-espinosa-pYQSM-p_0_c-unsplash.jpg" class="image-popup">
+                                    <img src="images/work/anthony-espinosa-pYQSM-p_0_c-unsplash.jpg"
+                                        class="img-fluid work-image" alt="">
+                                </a>
+                            </div>
+
+                            <div class="work-text-info">
+                                <small class="work-tag bg-white shadow-lg">Art Direction</small>
+
+                                <h4 class="work-title">Simple Burger</h4>
+                            </div>
+                        </div>
+
+                        <div class="work-thumb mb-4">
+                            <div class="work-image-wrap">
+                                <a href="images/work/samantha-gades-lf2pD--wIUA-unsplash.jpg" class="image-popup">
+                                    <img src="images/work/samantha-gades-lf2pD--wIUA-unsplash.jpg"
+                                        class="img-fluid work-image" alt="">
+                                </a>
+                            </div>
+
+                            <div class="work-text-info">
+                                <small class="work-tag bg-white shadow-lg">Design</small>
+
+                                <h4 class="work-title">Fitness</h4>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-12">
+                        <div class="work-thumb mb-4">
+                            <div class="work-image-wrap">
+                                <a href="images/work/business-chart-visual-graphics-report-concept.jpg"
+                                    class="image-popup">
+                                    <img src="images/work/business-chart-visual-graphics-report-concept.jpg"
+                                        class="img-fluid work-image" alt="">
+                                </a>
+                            </div>
+
+                            <div class="work-text-info">
+                                <small class="work-tag bg-white shadow-lg">Web Development</small>
+
+                                <h4 class="work-title">Data Science</h4>
+                            </div>
+                        </div>
+
+                        <div class="work-thumb mb-4">
+                            <div class="work-image-wrap">
+                                <a href="images/work/tyler-nix-HmVQh_EQJhY-unsplash.jpg" class="image-popup">
+                                    <img src="images/work/tyler-nix-HmVQh_EQJhY-unsplash.jpg"
+                                        class="img-fluid work-image" alt="">
+                                </a>
+                            </div>
+
+                            <div class="work-text-info">
+                                <small class="work-tag bg-white shadow-lg">Branding</small>
+
+                                <small class="work-tag bg-white shadow-lg">Graphic Design</small>
+
+                                <h4 class="work-title">Health</h4>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-12">
+                        <div class="work-thumb mb-4">
+                            <div class="work-image-wrap">
+                                <a href="images/work/mos-sukjaroenkraisri-jz8AmJDyhig-unsplash.jpg" class="image-popup">
+                                    <img src="images/work/mos-sukjaroenkraisri-jz8AmJDyhig-unsplash.jpg"
+                                        class="img-fluid work-image" alt="">
+                                </a>
+                            </div>
+
+                            <div class="work-text-info">
+                                <small class="work-tag bg-white shadow-lg">Photography</small>
+
+                                <h4 class="work-title">Portraits</h4>
+                            </div>
+                        </div>
+
+                        <div class="work-thumb work-thumb-text">
+                            <div class="">
+                                <p class="work-title">If you are interested in working together, Say Hi at <strong><a
+                                            href="#">hi@company.com</a></strong></p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="pricing section-padding" id="section_6" style="background-color:#E8e4c9;">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-12">
+                        <h2 class="text-white mb-5 text-center">Why choose DevDrag</h2>
+                    </div>
+
+                    <div class="col-lg-12 col-18">
+                        <div class="pricing-plan bg-white">
+                            <div class="d-flex flex-wrap align-items-center pricing-header">
+                                <div class="pricing-name">
+                                    <h5>Our journey into creativity begins with a simple yet profound belief: </h5>
+                                </div>
+                            </div>
+
+                            <div class="pricing-body">
+                                <h5 class="mb-3">Managed Features</h5>
+
+                                <ul class="pricing-list">
+                                    <li class="pricing-list-item">Fully Digital</li>
+                                    <li class="pricing-list-item">Social Media Managements</li>
+                                    <li class="pricing-list-item">Website Optimizations</li>
+                                    <li class="pricing-list-item">24/7 Phone Calls and Emails</li>
+                                </ul>
+
+                                <h5 class="mt-lg-5 mt-4 mb-3">Small to Mid-size Businesses</h5>
+
+                                <p>Everything you need for your digital marketing stuffs</p>
+                            </div>
+                        </div>
+                    </div>
+        </section>
+        <section class="contact section-padding" id="section_7" style="background-color:#E8e4c9;">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-lg-8 col-md-10 col-12 mx-auto">
+                        <h2 class="mb-4 text-center">Let's chat</h2>
+
+                        <form class="custom-form" role="form" action="" method="post">
+                            <div class="row">
+                                <div class="col-lg-4 col-md-6 col-12 my-2">
+                                    <label class="mb-2" for="name">Full Name</label>
+
+                                    <input type="text" name="name" id="name" class="form-control" required="">
+                                </div>
+
+                                <div class="col-lg-4 col-md-6 col-12 my-2">
+                                    <label class="mb-2" for="email">Email Address</label>
+
+                                    <input type="email" name="email" id="email" pattern="[^ @]*@[^ @]*"
+                                        class="form-control" required="">
+                                </div>
+
+                                <div class="col-lg-4 col-md-6 col-12 my-2">
+                                    <label class="mb-2" for="subject">How did you know about us?</label>
+
+                                    <select class="form-select form-control" name="subject" id="subject">
+                                        <option selected="">Choose a subject</option>
+                                        <option value="web+search">Website Searches</option>
+                                        <option value="social+media">Social Media</option>
+                                        <option value="others">Others</option>
+                                    </select>
+                                </div>
+
+
+
+                                <div class="col-12 my-2">
+                                    <label class="mb-2" for="message">Tell us about the project</label>
+
+                                    <textarea class="form-control" rows="5" id="message" name="message"></textarea>
+
+                                    <button type="submit" class="form-control mt-4" id="submit">Submit</button>
+                                </div>
+
+                            </div>
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-lg-5 col-12 me-auto mb-4">
+                    <h5 class="text-white mb-3">Newsletter</h5>
+
+                    <form class="custom-form subscribe-form mt-4" role="form">
+                        <div class="row">
+                            <div class="col-lg-8 col-md-8 col-7">
+                                <input type="email" name="subscribe-email" id="subscribe-email" pattern="[^ @]*@[^ @]*"
+                                    class="form-control" placeholder="Your email address" required="">
+                            </div>
+
+                            <div class="col-lg-4 col-md-4 col-5">
+                                <button type="submit" class="form-control" id="subscribe">Subscribe</button>
+                            </div>
+
+                        </div>
+                    </form>
+                </div>
+
+                <div class="col-lg-2 col-12 mx-auto my-lg-0 my-4">
+                    <h5 class="text-white mb-3">Services</h5>
+
+                    <ul class="footer-menu">
+                        <li class="footer-menu-item"><a href="#" class="footer-menu-link">Digital Marketing</a></li>
+
+                        <li class="footer-menu-item"><a href="#" class="footer-menu-link">Creative Ideas</a></li>
+
+                        <li class="footer-menu-item"><a href="#" class="footer-menu-link">Branding</a></li>
+
+                        <li class="footer-menu-item"><a href="#" class="footer-menu-link">Video Contents</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-2 col-12">
+                    <h5 class="text-white mb-3">Say Hi</h5>
+
+                    <p class="text-white mb-1">Sunderland SR6 0JL, United Kingdom</p>
+
+                    <p><a href="mailto:email@company.com" class="footer-link">email@company.com</a>
+                    <p>
+                </div>
+
+                <div class="site-footer-bottom mt-5">
+                    <div class="row pt-4">
+                        <div class="col-lg-6 col-12">
+                            <p class="copyright-text tooplate-link">Copyright © 2023 DevDrag.
+                            </p>
+                        </div>
+
+                        <div class="col-lg-3 col-12 ms-auto">
+                            <ul class="social-icon">
+                                <li><a href="#" class="social-icon-link bi-facebook"></a></li>
+
+                                <li><a href="https://twitter.com/search?q=tooplate"
+                                        class="social-icon-link bi-twitter"></a></li>
+
+                                <li><a href="#" class="social-icon-link bi-instagram"></a></li>
+
+                                <li><a href="#" class="social-icon-link bi-linkedin"></a></li>
+
+                                <li><a href="#" class="social-icon-link bi-youtube"></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+
+    <!-- JAVASCRIPT FILES -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.backstretch.min.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/magnific-popup-options.js"></script>
+    <script src="js/click-scroll.js"></script>
+    <script src="js/navbar.js"></script>
+
+    <script>
+        const goToPage1Button = document.getElementById('homeBtn');
+        const goToPage3Button = document.getElementById('goToPage3');
+      
+        goToPage1Button.addEventListener('click', function() {
+         
+          window.location.href = './images/work/html/home.html';
+        });
+      
+        goToPage3Button.addEventListener('click', function() {
+          
+          window.location.href = 'page3.html';
+        });
+      </script>
+
+<script>
+    const goToPage2Button= document.getElementById('aboutBtn');
+    const goToPage4Button = document.getElementById('goToPage4');
+  
+    goToPage2Button.addEventListener('click', function() {
+      // Navigate to page1.html
+      window.location.href = './images/work/html/about.html';
+    });
+  
+    goToPage4Button.addEventListener('click', function() {
+      // Navigate to page3.html
+      window.location.href = 'page4.html';
+    });
+  </script>
+
+<script>
+    const goToPage5Button= document.getElementById('OurProcessBtn');
+    const goToPage6Button = document.getElementById('goToPage6');
+  
+    goToPage5Button.addEventListener('click', function() {
+      // Navigate to page1.html
+      window.location.href = './images/work/html/OurProcess.html';
+    });
+  
+    goToPage6Button.addEventListener('click', function() {
+      // Navigate to page3.html
+      window.location.href = 'page6.html';
+    });
+  </script>
+
+<script>
+    const goToPage7Button= document.getElementById('ServicesBtn');
+    const goToPage8Button = document.getElementById('goToPage8');
+  
+    goToPage7Button.addEventListener('click', function() {
+      // Navigate to page1.html
+      window.location.href = './images/work/html/OurServices.html';
+    });
+  
+    goToPage8Button.addEventListener('click', function() {
+      // Navigate to page3.html
+      window.location.href = 'page8.html';
+    });
+  </script>
+
+<script>
+    const goToPage9Button= document.getElementById('PortfolioBtn');
+    const goToPage10Button = document.getElementById('goToPage10');
+  
+    goToPage9Button.addEventListener('click', function() {
+      // Navigate to page1.html
+      window.location.href = './images/work/html/Portfolio.html';
+    });
+  
+    goToPage10Button.addEventListener('click', function() {
+      // Navigate to page3.html
+      window.location.href = 'page10.html';
+    });
+  </script>
+
+<script>
+    const goToPage11Button= document.getElementById('PricingBtn');
+    const goToPage12Button = document.getElementById('goToPage12');
+  
+    goToPage11Button.addEventListener('click', function() {
+      // Navigate to page1.html
+      window.location.href = './images/work/html/Pricing.html';
+    });
+  
+    goToPage12Button.addEventListener('click', function() {
+      // Navigate to page3.html
+      window.location.href = 'page12.html';
+    });
+  </script>
+
+<script>
+    const goToPage13Button= document.getElementById('ContactBtn');
+    const goToPage14Button = document.getElementById('goToPage14');
+  
+    goToPage13Button.addEventListener('click', function() {
+      // Navigate to page1.html
+      window.location.href = './images/work/html/Contact.html';
+    });
+  
+    goToPage14Button.addEventListener('click', function() {
+      // Navigate to page3.html
+      window.location.href = 'page14.html';
+    });
+  </script>
+</body>
+
+</html>
